@@ -1,0 +1,1 @@
+	public enum Tables{Books,VideoGames,Music,Films,Discs};
