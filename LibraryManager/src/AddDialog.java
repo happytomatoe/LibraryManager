@@ -1,5 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import java.awt.Frame;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -28,6 +29,10 @@ public class AddDialog extends JDialog {
 	 * Create the dialog.
 	 */
 	public AddDialog() {
+		init();
+	}
+
+	private void init() {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setLayout(new FlowLayout());
@@ -50,5 +55,10 @@ public class AddDialog extends JDialog {
 			}
 		}
 	}
+
+	public AddDialog(Frame owner) {
+super(owner);
+init();	
+}
 
 }
